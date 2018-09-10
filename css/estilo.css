@@ -1,0 +1,128 @@
+@charset "UTF-8";
+@font-face{
+	font-family: 'FonteBatD';
+	src: url("../font/gotham-bold.otf");
+}
+@font-face{
+	font-family: 'FonteBatK';
+	src: url("../font/gotham-book.otf");
+}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+a{
+	text-decoration: none;
+	color: #686868;
+}
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	color: #686868;
+}
+#header{
+	width: 1280px;
+	height: 145px;
+}
+.header__logo{
+	width: 1280px;
+	height: 86px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.header__content{
+	width: 1280px;
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-top: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+}
+.header__content__logar{
+	flex:0 1 10%;
+	padding: 0px 0px 0px 10px;
+}
+.header__content__menu{
+	flex:0 1 50%;
+}
+.header__content__menu ul{
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.header__content__menu__item{
+	width: 100px;
+	height: 25px;
+	font-family: 'FonteBatK';
+	line-height: 20px;
+	font-size: 14pt;
+	text-transform: uppercase;
+	color: #686868;
+	margin: 5px;
+}
+.header__content__pesquisa{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex:0 1 15%;
+}
+.header__content__pesquisa__sacola{
+	display: flex;
+	align-items: center;
+	padding: 0px 10px 0px 0px;
+}
+/* Breadcrumbs */
+.header__breadcrumb{
+	border: 1px solid #cccccc;
+}
+.header__breadcrumb ul{
+	padding: 10px 20px;
+}
+.header__breadcrumb ul li{
+	display: inline; 
+	color: #AEB6C1;
+}
+.header__breadcrumb ul li+li:before{
+	padding: 8px;
+    color: #AEB6C1;
+    content: "/\00a0";
+}
+.header__breadcrumb ul li a{
+	color: #AEB6C1;
+}
+.header__breadcrumb ul li a:hover{
+	text-decoration: underline;
+}
+.header__breadcrumb ul li:last-child{
+	font-weight: bold;
+}
+
+/* Botão de busca */
+input[type=text] {
+    width: 83px;
+    height: 36px;
+    border: 0;
+    border-bottom: 1px solid rgba(104, 104, 104, 0.4);
+    font-size: 16px;
+    background-color: white;
+    background-image: url('../icones/Union.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.5s ease-in-out;
+
+    font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	color: #686868;
+	padding: 0px 0px 0px 40px;
+
+}
+input[type=text]:focus {
+    width: 150px;
+}
+
