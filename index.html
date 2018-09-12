@@ -4,8 +4,11 @@
 	<meta charset="utf-8"/>
 	<title>Original.io/Join-us | By Thiago Silva</title>
 	<link rel="stylesheet" type="text/css" href="css/estilo.css"/>
-	<link rel="stylesheet" type="text/css" href="css/estilo_foto.css"/>
+	<link rel="stylesheet" type="text/css" href="css/foto.css"/>
+	<link rel="stylesheet" type="text/css" href="css/info-produto.css"/>
+	<link rel="stylesheet" type="text/css" href="css/modal.css"/>
 </head>
+
 <body>
 	<header id="header">
 		<div class="header__logo">
@@ -98,8 +101,111 @@
 				</a>
 			</div>
 		</div>
-		<div class="inf-produto">
+		<div class="info-produto">
+			<div class="descproduto">
+		<h2>RASTEIRA TIRA DEDO</h2>
+		<span>RT 0568</span><span>03.07.0653</span>
+	</div>
+	<div class="preco">
+		<div>
+			<span class="preco__old">R$ 69,00</span><span class="preco__new">R$ 55,20</span>
+		</div>
+		<div>
+			<span class="preco__parcela">Ou 6x de R$ 9,20</span>
+		</div>
+	</div>
+	<div class="cores">
+		<div class="cores__nome">
+			<span>Cor: (<span id="cor">Fucsia</span>)</span>
+		</div>	
+		<div class="cores__circulo">
+			<img id="cir_am1" class="cores__circulo__maior" src="icon/amarela.png"/>
+			<img class="cores__circulo__menor" src="icon/magenta.png" onclick="mudaCor('Magenta');mudaCorNome(1);someCirculo(1)";/>
+			<img id="cir_am2" class="cores__circulo__maior" src="icon/amarela.png"/>
+			<img class="cores__circulo__menor" src="icon/fucsia.png" onclick="mudaCor('Fucsia');mudaCorNome(2);someCirculo(2)";/>
+			<img id="cir_am3" class="cores__circulo__maior" src="icon/amarela.png"/>
+			<img class="cores__circulo__menor" src="icon/marrom.png" onclick="mudaCor('Marrom');mudaCorNome(3);someCirculo(3)";/>
+			<img id="cir_am4" class="cores__circulo__maior" src="icon/amarela.png"/>
+			<img class="cores__circulo__menor" src="icon/preto.png" onclick="mudaCor('Preto');mudaCorNome(4);someCirculo(4)";/>
+		</div>
+	</div>
+	<div class="tamanhos">
+		<div class="tamanhos__tamanho-guia">
+			<div>
+				<span>Tamanho: (<span id="num">37</span>)</span>
+			</div>
+			<div>
+				<a href="*">Guia de medidas</a>
+			</div>
+		</div>
+		<div class="content">
+			<figure class="content__bola" onclick="mudaFormat(1);mudaNum(33)";>
+				<img id="img1" src="icon/ellipse.png"/>
+				<figcaption>33</figcaption>
+			</figure>
+			<figure class="content__bola" onclick="mudaFormat(2);mudaNum(34)";>
+				<img id="img2" src="icon/ellipse.png"/>
+				<figcaption>34</figcaption>
+			</figure>
+			<figure class="content__bola" onclick="mudaFormat(3);mudaNum(35)";>
+				<img id="img3" src="icon/ellipse.png"/>
+				<figcaption>35</figcaption>
+			</figure>
+			<figure class="content__bola" onclick="mudaFormat(4);mudaNum(36)";>
+				<img id="img4" src="icon/ellipse.png"/>
+				<figcaption>36</figcaption>
+			</figure>
+			<figure class="content__bola" onclick="mudaFormat(5);mudaNum(37)";>
+				<img id="img5" src="icon/ellipse_selecao.png"/>
+				<figcaption>37</figcaption>
+			</figure>
+			<figure class="content__bola" onclick="mudaFormat(6);mudaNum(38)";>
+				<img id="img6" src="icon/ellipse.png"/>
+				<figcaption>38</figcaption>
+			</figure>
+			<figure class="content__bola" onclick="mudaFormat(7);mudaNum(39)";>
+				<img id="img7" src="icon/ellipse.png"/>
+				<figcaption>39</figcaption>
+			</figure>
+			<figure class="content__bola" onclick="mudaFormat(8);mudaNum(40)";>
+				<img id="img8" src="icon/ellipse.png"/>
+				<figcaption>40</figcaption>
+			</figure>
+			<figure class="content__bola" onclick="mudaFormat(9);mudaNum(41)";>
+				<img id="img9" src="icon/ellipse.png"/>
+				<figcaption>41</figcaption>
+			</figure>
+			<figure class="content__bola" onclick="mudaFormat(10);mudaNum(42)";>
+				<img id="img10" src="icon/ellipse.png"/>
+				<figcaption>42</figcaption>
+			</figure>
+		</div>
+	</div>
+
+	<div id="myModal" class="modal">
+	<div class="modal-content">
+	<img class="close" src="icon/fechar.png">
+	<img class="modal__content__img" src="img/prod02.png">
+	<div class="modal__content__h2">
+	<h2>Adicionado<br/>com<br/>sucesso!</h2>
+	</div>
+	<button>Finalizar compra</button>
+	<div class="modal__content__link">
+	<a href="*">Continuar Comprando</a>
+	</div>
+	</div>
+	</div>
+
+	<div class="tamanhos__botao">
+		
+			<button id="myBotao" class="botao">Adicionar à sacola</button>
+
 			
+		
+	</div>
+	<div class="tamanhos__texto">
+		<p>Rasteira em atanado soft com tira no dedo e fechamento de fivela. Possui sola sempre na cor do cabedal.</p>
+	</div>
 		</div>
 	</section>
 	<section>
@@ -109,4 +215,6 @@
 	</section>
 </body>
 <script language="javascript" src="js/javascript.js"></script>
+<script language="javascript" src="js/info-produto.js"></script>
+<script language="javascript" src="js/modal.js"></script>
 </html>

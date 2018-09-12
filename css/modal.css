@@ -1,0 +1,109 @@
+@charset "UTF-8";
+/* Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(32,32,32,0.6); /* Black w/ opacity */
+}
+/* Modal Content */
+.modal-content {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   flex-direction: column;
+    
+    margin: auto;
+    position: relative;
+    width: 445px;
+    height: 602px;
+    background-color: #ffffff;
+    max-width: 700px;
+
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.5s;
+    animation-name: zoom;
+    animation-duration: 0.5s;
+}
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+.modal-content h2{
+    font-family: Gotham Bold, sans-serif;
+    line-height: 31px;
+    font-size: 22px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #DE8F75;
+    margin: 0px;
+}
+.modal-content button{
+    width: 290px;
+    height: 50px;
+    font-family: Open Sans, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 23px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #FFFFFF;
+    background-color: #32917B;
+    border-radius: 3px;
+}
+.modal-content a{
+    font-family: Gotham Book, sans-serif;
+    line-height: 20px;
+    font-size: 14px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #AEB6C1;
+}
+/* Image */
+.modal__content__img{
+    width: 290px;
+    height: 374px;
+    padding: 36px 0px 0px 0px;
+}
+.modal__content__h2{
+    width: 290px;
+    display: flex;
+    align-items: flex-start;
+}
+.modal__content__link{
+    width: 290px;
+    height: 36px;
+    padding: 0px 0px 23px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 16px;
+    left: 408px;
+    transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+    cursor: pointer;
+    opacity: 0.7;
+}
