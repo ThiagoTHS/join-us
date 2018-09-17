@@ -26,7 +26,11 @@
 			width: 34px;
 			height: 34px;
 		}
-		.preco, .nomeproduto, span+span:before{
+		.preco 
+		span+span:before{
+			content: " | ";
+		} 
+		.nomeproduto span+span:before{
 			content: " | ";
 		}
 		.botao{
@@ -40,6 +44,7 @@
 			color: #FFFFFF;
 			width: 405px;
 			height: 60px;
+			border: 0;
 			background-color: #32917B;
 			border-radius: 3px;
 		}
