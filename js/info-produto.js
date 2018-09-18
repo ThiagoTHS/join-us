@@ -5,11 +5,13 @@ function mudaNum (numero){
 		var i;
 		for (i = 1; i <= 10; i++){
 			if(item == i){
-				document.getElementById('img'+item).src = "ellipse_selecao.png";
+				document.getElementById('img'+item).src = "icon/ellipse_selecao.png";
 				mudaNum();
+			   	document.getElementById('fig'+item).style.fontFamily = "FonteBatD";
 			}
 			else{
-				document.getElementById('img'+i).src = "ellipse.png";
+				document.getElementById('img'+i).src = "icon/ellipse.png";
+				document.getElementById('fig'+i).style.fontFamily = "FonteBatK";
 			}
 		}
 	}
