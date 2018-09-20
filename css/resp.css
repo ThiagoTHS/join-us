@@ -14,17 +14,15 @@
 	.footer__parte-cima__links{
 		order: 2;
 		width: 80vw;
-		pointer-events: auto;
+		
 	}
 	.footer__parte-cima__ass-new{
 		order: 1;
 	}
-	.footer__parte-cima__links div div{
-		display: none;
+	.foto{
+		margin-bottom: 20px;
 	}
-	.expandi{
-		display: inline-block;
-	}
+	
 
  }
  @media screen and (max-width: 425px) {
@@ -53,12 +51,52 @@
 	}
 	.footer__parte-cima__links{
 		width: 40vw;
+		pointer-events: auto;
+	}
+	.footer__parte-cima__links div:nth-child(1){
+		width: 185px;
+	}
+
+	.footer__parte-cima__links div div{
+		display: none;
+	}
+	.expandi{
+		display: inline-block;
+	}
+	.footer__parte-cima__links div div{
+		
+	}
+
+	.footer__parte-cima__links div h3{
+		height: 40px;
+		
+		border-top: 2px solid #AEB6C1;
+		border-bottom: 2px solid #AEB6C1;
+		margin-bottom: 5px;
+		padding: 7px;
+		opacity: .7;
+	}
+	.footer__parte-cima__links div h3:hover{
+		opacity: 1;
+	}
+	.footer__parte-cima__links div h3 svg{
+		padding-top: 2px;
+		float: right;
+
 	}
 	.content{
 		width: 50vw;
 		align-self: center;
 	}
-	
+	.foto{
+		margin-right: 10px;
+	}
+	.footer__faixa-baixo img{
+		padding-top: 10px;
+	}
+	.footer__faixa-baixo{
+		padding: 10px;
+	}
  }
   @media screen and (max-width: 320px) {
  	

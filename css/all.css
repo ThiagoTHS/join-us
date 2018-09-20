@@ -131,11 +131,10 @@ img{
 .menu{
     display: flex;
     justify-content: center;
-
     border: 0px solid red;
 }
 .busca{
-	width: 170px;
+	width: 180px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -374,8 +373,12 @@ img{
     box-sizing: border-box;
     border-radius: 3px;
 }
-
-.busca input{
+.header__content__bag__busca{
+	width: 150px;
+	border: 0px solid red;
+	margin-right: 5px;
+}
+.bnt-busca{
 	width: 75px;
     height: 36px;
     border: 0;
@@ -397,7 +400,7 @@ img{
 	transition: 0.5s;
 	padding: 0px 0px 0px 40px;
 }
-.busca input:focus{
+.bnt-busca:focus{
 	width: 85px;
 	transition: 0.5s;
 	padding: 0px;
@@ -515,7 +518,7 @@ img{
 	left: 84px;
 	top: calc(50% - 40px/2);
 }
-.produto form{
+.btn-lista-produto{
 	position: absolute;
 	width: 150px;
 	height: 34.44px;
@@ -529,18 +532,19 @@ img{
 	display: flex; 
 	justify-content: space-between;
 }
-.produto form input{
+.btn-lista-produto input{
 	text-align: center;
 	line-height: normal;
 	border: 0;
 }
-.produto form input:nth-child(2){
+.btn-lista-produto input:nth-child(2){
 	font-family: 'Gotham Bold', sans-serif;
 	font-size: 14px;
 	color: #5F75AA;
 	background: #ffffff;
 	width: 48px;
-	height: 31px;
+	height: 30px;
+	
 }
 .produto form input:nth-child(1), .produto form input:nth-child(3){
 	font-family: 'Roboto', sans-serif;
@@ -550,7 +554,8 @@ img{
 	color: #FFFFFF;
 	background: #E3E3E3;
 	width: 44px;
-	height: 35px;
+	height: 31px;
+	
 }
 .produto p{
 	font-family: 'Open Sans', sans-serif;
@@ -1197,12 +1202,10 @@ span+span:before{
 	align-items: center;
 }
 .shelf{
-	width: 100%;
+	
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-start;
-
     border:0px solid red;
 }
 .shelf-controls{
@@ -1237,6 +1240,8 @@ span+span:before{
     position: relative;
     width: 291px;
     height: 403px;
+    margin: 0 5px;
+
 }
 .shelf-iten img:nth-child(1){
     position: absolute;
@@ -1368,6 +1373,7 @@ user-select: none;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	align-items: center;
 	border: 0px solid red;
 	pointer-events: none;
 }
@@ -1392,8 +1398,6 @@ user-select: none;
 	font-size: 12px;
 	text-transform: uppercase;
 	color: #AEB6C1;
-	margin: 0;
-	padding: 0;
 }
 .expandi{
 	display: none;

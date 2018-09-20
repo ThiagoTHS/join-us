@@ -243,7 +243,9 @@
 			</div>
 			<!-- Fim Menu -->
 			<div class="busca"> <!-- Buscar -->
-				<input type="text" name="busca" placeholder="Busca">
+				<div class="header__content__bag__busca">
+					<input class="bnt-busca" type="text" name="busca" placeholder="Busca">
+				</div>
 				<div class="header__content__bag__icon">
 					<img id="myBotao2" src="icon/sacola.png"/>
 					<span>0</span>
@@ -263,7 +265,7 @@
 						<div class="produto">
 							<img class="prod-img" src="img/prod1.png"/>
 							<p>Rasteira Tira Dedo<br/><span>R$ 49,90</span></p>
-							<form>
+							<form class="btn-lista-produto">
 								<input type="button" value="-" onclick="menos( 'quantidade1' )">
 								<input type="text" name="quantidade" id="quantidade1" value="0" size="1" readonly="readonly" />
 								<input type="button" value="+" onclick="mais( 'quantidade1' )">
@@ -275,7 +277,7 @@
 						<div class="produto">
 							<img class="prod-img" src="img/prod2.png"/>
 							<p>Rasteira Tira Dedo<br/><span>R$ 49,90</span></p>
-							<form>
+							<form class="btn-lista-produto">
 								<input type="button" value="-" onclick="menos( 'quantidade2' )">
 								<input type="text" name="quantidade" id="quantidade2" value="0" size="1" readonly="readonly" />
 								<input type="button" value="+" onclick="mais( 'quantidade2' )">
@@ -287,7 +289,7 @@
 						<div class="produto">
 							<img class="prod-img" src="img/prod3.png"/>
 							<p>Rasteira Tira Dedo<br/><span>R$ 49,90</span></p>
-							<form>
+							<form class="btn-lista-produto">
 								<input type="button" value="-" onclick="menos( 'quantidade3' )">
 								<input type="text" name="quantidade" id="quantidade3" value="0" size="1" readonly="readonly" />
 								<input type="button" value="+" onclick="mais( 'quantidade3' )">
@@ -299,7 +301,7 @@
 						<div class="produto">
 							<img class="prod-img" src="img/prod4.png"/>
 							<p>Rasteira Tira Dedo<br/><span>R$ 49,90</span></p>
-							<form>
+							<form class="btn-lista-produto">
 								<input type="button" value="-" onclick="menos( 'quantidade4' )">
 								<input type="text" name="quantidade" id="quantidade4" value="0" size="1" readonly="readonly" />
 								<input type="button" value="+" onclick="mais( 'quantidade4' )">
@@ -311,7 +313,7 @@
 						<div class="produto">
 							<img class="prod-img" src="img/prod5.png"/>
 							<p>Rasteira Tira Dedo<br/><span>R$ 49,90</span></p>
-							<form>
+							<form class="btn-lista-produto">
 								<input type="button" value="-" onclick="menos( 'quantidade5' )">
 								<input type="text" name="quantidade" id="quantidade5" value="0" size="1" readonly="readonly" />
 								<input type="button" value="+" onclick="mais( 'quantidade5' )">
@@ -837,7 +839,7 @@
 				</div>
 				<div>
 					<h3 onclick="showMenuMobile('links2')">Informações
-						<svg class="expandi" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+						<svg class="expandi" width="25" height="25" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
 							<path d="M17.1673 10.1669H10.1673V17.1669H7.83398V10.1669H0.833984V7.83358H7.83398V0.833588H10.1673V7.83358H17.1673V10.1669Z"/>
 						</svg>
 					</h3>
