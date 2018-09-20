@@ -2,8 +2,10 @@
 <html lang="pt-br">
 <head>
 	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Original.io/Join-us | By Thiago Silva</title>
 	<link rel="stylesheet" type="text/css" href="css/all.css"/>
+	<link rel="stylesheet" type="text/css" href="css/resp.css"/>
 	<!-- teste 
 	<link rel="stylesheet" type="text/css" href="css/estilo.css"/>
 	<link rel="stylesheet" type="text/css" href="css/foto.css"/>
@@ -15,16 +17,29 @@
 </head>
 <body>
 	<header id="header">
-		<div class="header__logo">
-			<img src="img/logo.png"/>
-		</div>
-		<div class="header__content">
-			<div class="header__content__log-deslog"><!-- Logar/Deslogar -->
+		<img class="logo" src="img/logo.png"/>
+
+
+		<button class="btn-menu-mobile" onclick="showMenuMobile('menumobile')">
+			<svg width="24" height="15" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M0.333984 12.0828V14.4162H23.6673V12.0828H0.333984ZM0.333984 6.24949V8.58282H23.6673V6.24949H0.333984ZM0.333984 0.416161V2.74949H23.6673V0.416161H0.333984Z" fill="#fff"/>
+			</svg>
+		</button>
+		<div class="header-content">
+			<div id="menumobile" class="menu-mobile">
+				<ul>
+					<li><a href="#">sapatos</a></li>
+					<li><a href="#">bolsa</a></li>
+					<li><a href="#">acessórios</a></li>
+					<li><a href="#">off</a></li>
+				</ul>
+			</div>
+			<div class="login"><!-- Logar/Deslogar -->
 				<a href="*">Entrar</a>
 				<a href="*">Cadastrar-se</a>
 			</div>
 			<!-- Inicio Menu -->
-			<div class="header__content__menu">
+			<div class="menu">
 				<ul>
 					<li>
 						<button class="header__content__menu__botao">sapatos</button>
@@ -227,10 +242,8 @@
 				</ul><!-- Menu -->
 			</div>
 			<!-- Fim Menu -->
-			<div class="header__content__busca"> <!-- Buscar -->
+			<div class="busca"> <!-- Buscar -->
 				<input type="text" name="busca" placeholder="Busca">
-			</div>
-			<div class="header__content__bag"><!-- Bag -->
 				<div class="header__content__bag__icon">
 					<img id="myBotao2" src="icon/sacola.png"/>
 					<span>0</span>
@@ -379,8 +392,9 @@
 					<span class="mySlides__slide__legenda">Sandalha rasteira 04</span>
 				</a>
 			</div>
-		</div>						
-		<div class="info-produto"><!-- Info-Produto -->
+		</div>
+		<!-- Início -- Info-produto -->						
+		<div class="info-produto">
 			<div class="descproduto">
 				<h2>RASTEIRA TIRA DEDO</h2>
 				<span>RT 0568</span><span>03.07.0653</span>
@@ -460,7 +474,13 @@
 					</figure>
 				</div>
 			</div>
-			<!--Modal info-produto -->
+			<div class="tamanhos__botao">
+				<button id="myBotao" class="botao">Adicionar à sacola</button>
+			</div>
+			<div class="tamanhos__texto">
+				<p>Rasteira em atanado soft com tira no dedo e fechamento de fivela. Possui sola sempre na cor do cabedal.</p>
+			</div>
+			<!-- Início -- Modal Info-produto -->
 			<div id="myModal" class="modal">
 				<div class="modal-content">
 					<img class="close" src="icon/fechar.png">
@@ -474,13 +494,9 @@
 					</div>
 				</div>
 			</div>
-			<div class="tamanhos__botao">
-				<button id="myBotao" class="botao">Adicionar à sacola</button>
-			</div>
-			<div class="tamanhos__texto">
-				<p>Rasteira em atanado soft com tira no dedo e fechamento de fivela. Possui sola sempre na cor do cabedal.</p>
-			</div>
+			<!-- Fim -- Modal Info-produto -->
 		</div>
+		<!-- Fim -- Info-produto -->
 	</section>
 	<section class="corpo-content2">
 		<div class="pratileira">
@@ -805,26 +821,44 @@
 				<img src="icon/subtract.png"/>
 				<img src="icon/vtex-pci-200.png"/>
 				<img src="icon/selo-ebit.png"/>
-
 			</div>
 			<div class="footer__parte-cima__links">
 				<div>
-					<h3>Institucional</h3>
-					<a href="*">A Marca</a>
-					<a href="*">Lojas</a>
-					<a href="*">Contato</a>
+					<h3 onclick="showMenuMobile('links1')">Institucional
+						<svg class="expandi" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+							<path d="M17.1673 10.1669H10.1673V17.1669H7.83398V10.1669H0.833984V7.83358H7.83398V0.833588H10.1673V7.83358H17.1673V10.1669Z"/>
+						</svg>
+					</h3>
+					<div id="links1">
+						<a href="*">A Marca</a>
+						<a href="*">Lojas</a>
+						<a href="*">Contato</a>
+					</div>
 				</div>
 				<div>
-					<h3>Informações</h3>
-					<a href="*">Formas de Pagamento</a>
-					<a href="*">Troca e Devoluções</a>
-					<a href="*">Cuidados com o Produto</a>
+					<h3 onclick="showMenuMobile('links2')">Informações
+						<svg class="expandi" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+							<path d="M17.1673 10.1669H10.1673V17.1669H7.83398V10.1669H0.833984V7.83358H7.83398V0.833588H10.1673V7.83358H17.1673V10.1669Z"/>
+						</svg>
+					</h3>
+					<div id="links2">
+						<a href="*">Formas de Pagamento</a>
+						<a href="*">Troca e Devoluções</a>
+						<a href="*">Cuidados com o Produto</a>
+					</div>
 				</div>
 				<div>
-					<h3>Conheça</h3>
-					<a href="*">Franquias e Multimarcas</a>
-					<a href="*">Trabalhe com a Gente</a>
-					<a href="*">Procon-RJ</a>
+					<h3 onclick="showMenuMobile('links3')">Conheça
+						<svg class="expandi" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+							<path d="M17.1673 10.1669H10.1673V17.1669H7.83398V10.1669H0.833984V7.83358H7.83398V0.833588H10.1673V7.83358H17.1673V10.1669Z"/>
+						</svg>
+					</h3>
+					</h3>
+					<div id="links3">
+						<a href="*">Franquias e Multimarcas</a>
+						<a href="*">Trabalhe com a Gente</a>
+						<a href="*">Procon-RJ</a>
+					</div>
 				</div>
 			</div>
 			<div class="footer__parte-cima__ass-new">
@@ -853,4 +887,5 @@
 <script language="javascript" src="js/modal.js"></script>
 <script language="javascript" src="js/sacola.js"></script>
 <script language="javascript" src="js/pratileira.js"></script>
+<script language="javascript" src="js/menu-mobile.js"></script>
 </html>

@@ -7,11 +7,11 @@ function mudaNum (numero){
 			if(item == i){
 				document.getElementById('img'+item).src = "icon/ellipse_selecao.png";
 				mudaNum();
-			   	document.getElementById('fig'+item).style.fontFamily = "FonteBatD";
+			   	document.getElementById('fig'+item).style.fontFamily = "Gotham Bold";
 			}
 			else{
 				document.getElementById('img'+i).src = "icon/ellipse.png";
-				document.getElementById('fig'+i).style.fontFamily = "FonteBatK";
+				document.getElementById('fig'+i).style.fontFamily = "Gotham Book";
 			}
 		}
 	}
