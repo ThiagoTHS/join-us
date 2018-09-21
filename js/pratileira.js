@@ -6,7 +6,7 @@ function maisSlides(n) {
 }
 function mostraSlides(n) {
 	var i;
-	var slide = document.getElementsByClassName("mySlides2");
+	var slide = document.getElementsByClassName("main__pratileira__content");
 
 	if (n > slide.length) {slideIndex = 1}    
 	if (n < 1) {slideIndex = slide.length}

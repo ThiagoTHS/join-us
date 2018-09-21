@@ -1,0 +1,40 @@
+@import "header.css";
+@import "main.css";
+@import "footer.css";
+@charset "UTF-8";
+@font-face{
+	font-family: 'Gotham Bold';
+	src: url("../font/gotham-bold.otf");
+}
+@font-face{
+	font-family: 'Gotham Book';
+	src: url("../font/gotham-book.otf");
+}
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500|Open+Sans|Roboto:400,900');
+*{
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	border: none;
+	outline: none;
+	font-weight: 300;
+	box-sizing: border-box;
+}
+body{
+
+}
+a{
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 20px;
+	font-size: 12px;
+	text-decoration: none;
+	color: #686868;
+}
+ul{
+	list-style: none;
+}
+img{
+	max-width: 100%;
+}

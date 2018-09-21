@@ -4,29 +4,18 @@
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Original.io/Join-us | By Thiago Silva</title>
-	<link rel="stylesheet" type="text/css" href="css/all.css"/>
-	<link rel="stylesheet" type="text/css" href="css/resp.css"/>
-	<!-- teste 
-	<link rel="stylesheet" type="text/css" href="css/estilo.css"/>
-	<link rel="stylesheet" type="text/css" href="css/foto.css"/>
-	<link rel="stylesheet" type="text/css" href="css/info-produto.css"/>
-	<link rel="stylesheet" type="text/css" href="css/modal.css"/>
-	<link rel="stylesheet" type="text/css" href="css/menu.css"/>
-	<link rel="stylesheet" type="text/css" href="css/sacola.css"/>
-	-->
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
 </head>
 <body>
 	<header id="header">
-		<img class="logo" src="img/logo.png"/>
-
-
-		<button class="btn-menu-mobile" onclick="showMenuMobile('menumobile')">
+		<a href="index.html"><img class="header__logo" src="img/logo.png"/></a>
+		<button class="header__btn-menu-mobile" onclick="showMenuMobile('menumobile')">
 			<svg width="24" height="15" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<path d="M0.333984 12.0828V14.4162H23.6673V12.0828H0.333984ZM0.333984 6.24949V8.58282H23.6673V6.24949H0.333984ZM0.333984 0.416161V2.74949H23.6673V0.416161H0.333984Z" fill="#fff"/>
 			</svg>
 		</button>
-		<div class="header-content">
-			<div id="menumobile" class="menu-mobile">
+		<div class="header__navbar">
+			<div id="menumobile" class="header__menu-mobile">
 				<ul>
 					<li><a href="#">sapatos</a></li>
 					<li><a href="#">bolsa</a></li>
@@ -34,17 +23,17 @@
 					<li><a href="#">off</a></li>
 				</ul>
 			</div>
-			<div class="login"><!-- Logar/Deslogar -->
+			<div class="header__navbar__login"><!-- Logar/Deslogar -->
 				<a href="*">Entrar</a>
 				<a href="*">Cadastrar-se</a>
 			</div>
 			<!-- Inicio Menu -->
-			<div class="menu">
+			<div class="header__navbar__menu">
 				<ul>
 					<li>
-						<button class="header__content__menu__botao">sapatos</button>
-						<div class="header__content__menu__submenu">
-							<div class="header__content__menu__submenu__sapatos">
+						<button class="header__navbar__menu__btn-menu">sapatos</button>
+						<div class="header__navbar__menu__submenu">
+							<div class="header__navbar__menu__submenu--sapatos">
 								<div><!-- rasteiras -->
 									<svg width="112" height="28" viewBox="0 0 112 28" xmlns="http://www.w3.org/2000/svg">
 										<path d="M107.447 17.7662H92.625C93.827 14.8872 93.958 10.4402 89.517 6.42821C81.087 -1.18679 70.9 -2.06479 60.003 3.94721C43.855 12.8562 30.194 17.2322 28.477 17.7662H4.206C1.612 17.7662 -9.15527e-07 19.6922 -9.15527e-07 22.7922C-9.15527e-07 25.8932 1.612 27.8182 4.206 27.8182H107.447C110.042 27.8182 111.653 25.8922 111.653 22.7922C111.653 19.6912 110.041 17.7662 107.447 17.7662ZM85.579 6.59321C91.559 10.9732 91.026 14.7062 90.227 16.5352C88.347 14.1382 84.267 10.4412 76.996 10.4412C75.699 10.4412 74.49 10.6032 73.35 10.8722L67.188 3.71921C72.893 1.64021 79.739 2.31621 85.579 6.59321ZM87.794 17.7662H65.218C65.696 17.4852 71.086 13.1292 76.996 13.1082C82.773 13.0872 86.132 15.8252 87.794 17.7662ZM64.52 4.70621L70.6 11.7642C69.071 12.3932 67.672 13.1782 66.353 13.9672L60.19 6.88321C60.556 6.68521 63.456 5.15821 64.52 4.70621ZM57.776 8.17221L64.036 15.3682C61.773 16.7152 59.702 17.7662 57.377 17.7662H36.512C41.751 15.7732 49.315 12.6102 57.776 8.17221ZM107.447 25.1512H4.206C3.825 25.1512 2.667 25.1512 2.667 22.7912C2.667 20.4322 3.826 20.4322 4.206 20.4322H107.447C107.828 20.4322 108.987 20.4322 108.987 22.7912C108.987 25.1512 107.827 25.1512 107.447 25.1512Z"/>
@@ -117,11 +106,11 @@
 						</div>
 					</li>
 					<li>
-						<button class="header__content__menu__botao">Bolsas</button>
-						<div class="header__content__menu__submenu">
-							<div class="header__content__menu__submenu__bolsas">	
-								<div class="bolsas__letras">
-									<div class="letras">
+						<button class="header__navbar__menu__btn-menu">Bolsas</button>
+						<div class="header__navbar__menu__submenu">
+							<div class="header__navbar__menu__submenu--bolsas">	
+								<div class="header__navbar__menu__submenu--bolsas__box">
+									<div class="header__navbar__menu__submenu--bolsas__box--titulo">
 										<div>
 											<svg>
 												<defs>
@@ -129,10 +118,10 @@
 														<feOffset in="SourceGraphic" dx="10" dy="3"/>
 													</filter>
 												</defs>
-												<text x="5%" y="90%" class="t2" filter="url(#offset)">
+												<text x="5%" y="90%" class="header__navbar__menu__submenu--XX__box--titulo--t2" filter="url(#offset)">
 													bol
 												</text>
-												<text x="5%" y="90%" class="t1">
+												<text x="5%" y="90%" class="header__navbar__menu__submenu--XX__box--titulo--t1">
 													bol
 												</text>
 											</svg>
@@ -144,10 +133,10 @@
 														<feOffset in="SourceGraphic" dx="10" dy="3"/>
 													</filter>
 												</defs>
-												<text x="10%" y="90%" class="t2" filter="url(#offset1)">
+												<text x="10%" y="90%" class="header__navbar__menu__submenu--XX__box--titulo--t2" filter="url(#offset1)">
 													sas
 												</text>
-												<text x="10%" y="90%" class="t1">
+												<text x="10%" y="90%" class="header__navbar__menu__submenu--XX__box--titulo--t1">
 													sas
 												</text>
 											</svg>
@@ -155,7 +144,7 @@
 									</div>
 									<button>Ver todas</button>
 								</div>
-								<svg id="chart">
+								<svg class="header__navbar__menu__submenu--XX__chart">
 									<line x1="1" y1="20" x2="1" y2="285"></line>
 								</svg>
 								<ul>
@@ -172,21 +161,21 @@
 						</div>
 					</li>
 					<li>
-						<button class="header__content__menu__botao">Acessórios</button>
-						<div class="header__content__menu__submenu">
-							<div class="header__content__menu__submenu__acessorios"><!-- Acessórios -->
-								<div class="bolsas__letras">
-									<div class="letras2">
+						<button class="header__navbar__menu__btn-menu">Acessórios</button>
+						<div class="header__navbar__menu__submenu">
+							<div class="header__navbar__menu__submenu--acessorios"><!-- Acessórios -->
+								<div class="header__navbar__menu__submenu--acessorios__box">
+									<div class="header__navbar__menu__submenu--acessorios__box--titulo">
 										<svg>
 											<defs>
 												<filter id="aces">
 													<feOffset in="SourceGraphic" dx="10" dy="3" />
 												</filter>
 											</defs>
-											<text x="0%" y="90%" class="t2" filter="url(#aces)">
+											<text x="0%" y="90%" class="header__navbar__menu__submenu--XX__box--titulo--t2" filter="url(#aces)">
 												Aces
 											</text>
-											<text x="0%" y="90%" class="t1">
+											<text x="0%" y="90%" class="header__navbar__menu__submenu--XX__box--titulo--t1">
 												Aces
 											</text>
 										</svg>
@@ -196,10 +185,10 @@
 													<feOffset in="SourceGraphic" dx="10" dy="3" />
 												</filter>
 											</defs>
-											<text x="45%" y="90%" class="t2" filter="url(#so)">
+											<text x="45%" y="90%" class="header__navbar__menu__submenu--XX__box--titulo--t2" filter="url(#so)">
 												só
 											</text>
-											<text x="45%" y="90%" class="t1">
+											<text x="45%" y="90%" class="header__navbar__menu__submenu--XX__box--titulo--t1">
 												só
 											</text>
 										</svg>
@@ -209,17 +198,17 @@
 													<feOffset in="SourceGraphic" dx="10" dy="3" />
 												</filter>
 											</defs>
-											<text x="10%" y="90%" class="t2" filter="url(#rios)">
+											<text x="10%" y="90%" class="header__navbar__menu__submenu--XX__box--titulo--t2" filter="url(#rios)">
 												rios
 											</text>
-											<text x="10%" y="90%" class="t1">
+											<text x="10%" y="90%" class="header__navbar__menu__submenu--XX__box--titulo--t1">
 												rios
 											</text>
 										</svg>              
 									</div>
 									<button>Ver todas</button>
 								</div>
-								<svg id="chart">
+								<svg class="header__navbar__menu__submenu--XX__chart">
 									<line x1="1" y1="20" x2="1" y2="285"></line>
 								</svg>
 								<ul> 
@@ -237,21 +226,21 @@
 						</div>
 					</li>
 					<li>
-						<button class="header__content__menu__botao">off</button>
+						<button class="header__navbar__menu__btn-menu">off</button>
 					</li>
 				</ul><!-- Menu -->
 			</div>
 			<!-- Fim Menu -->
-			<div class="busca"> <!-- Buscar -->
-				<div class="header__content__bag__busca">
-					<input class="bnt-busca" type="text" name="busca" placeholder="Busca">
+			<div class="header__navbar__busca-bag"> <!-- Buscar -->
+				<div class="header__navbar__busca-bag__busca">
+					<input class="header__navbar__busca-bag__busca--bnt-busca" type="text" name="busca" placeholder="Busca">
 				</div>
-				<div class="header__content__bag__icon">
-					<img id="myBotao2" src="icon/sacola.png"/>
+				<div class="header__navbar__busca-bag__bag">
+					<img id="btn2" src="icon/sacola.png"/>
 					<span>0</span>
 				</div>
-				<div id="myModal2" class="modal2"><!-- Modal -->
-					<div class="close2">
+				<div id="modal2" class="header__navbar__busca-bag__bag__modal"><!-- Modal -->
+					<div class="header__navbar__busca-bag__bag__modal__btn-close">
 						<img src="icon/botao_fechar.png"/>
 					</div>
 					<header>
@@ -261,9 +250,9 @@
 							<line x1="0" y1="1" x2="466" y2="1"></line>
 						</svg>
 					</header>
-					<div class="lista-produto">
-						<div class="produto">
-							<img class="prod-img" src="img/prod1.png"/>
+					<div class="header__navbar__busca-bag__bag__modal__lista-produto">
+						<div class="header__navbar__busca-bag__bag__modal__lista-produto__produto">
+							<img class="header__navbar__busca-bag__bag__modal__lista-produto__produto__prod-img" src="img/prod1.png"/>
 							<p>Rasteira Tira Dedo<br/><span>R$ 49,90</span></p>
 							<form class="btn-lista-produto">
 								<input type="button" value="-" onclick="menos( 'quantidade1' )">
@@ -271,11 +260,11 @@
 								<input type="button" value="+" onclick="mais( 'quantidade1' )">
 							</form>
 							<a href="*">
-								<img class="xizin" src="icon/xizin.png">
+								<img class="header__navbar__busca-bag__bag__modal__lista-produto__produto__btn-close" src="icon/xizin.png">
 							</a>
 						</div>
-						<div class="produto">
-							<img class="prod-img" src="img/prod2.png"/>
+						<div class="header__navbar__busca-bag__bag__modal__lista-produto__produto">
+							<img class="header__navbar__busca-bag__bag__modal__lista-produto__produto__prod-img" src="img/prod2.png"/>
 							<p>Rasteira Tira Dedo<br/><span>R$ 49,90</span></p>
 							<form class="btn-lista-produto">
 								<input type="button" value="-" onclick="menos( 'quantidade2' )">
@@ -283,11 +272,11 @@
 								<input type="button" value="+" onclick="mais( 'quantidade2' )">
 							</form>
 							<a href="*">
-								<img class="xizin" src="icon/xizin.png">
+								<img class="header__navbar__busca-bag__bag__modal__lista-produto__produto__btn-close" src="icon/xizin.png">
 							</a>
 						</div>
-						<div class="produto">
-							<img class="prod-img" src="img/prod3.png"/>
+						<div class="header__navbar__busca-bag__bag__modal__lista-produto__produto">
+							<img class="header__navbar__busca-bag__bag__modal__lista-produto__produto__prod-img" src="img/prod3.png"/>
 							<p>Rasteira Tira Dedo<br/><span>R$ 49,90</span></p>
 							<form class="btn-lista-produto">
 								<input type="button" value="-" onclick="menos( 'quantidade3' )">
@@ -295,11 +284,11 @@
 								<input type="button" value="+" onclick="mais( 'quantidade3' )">
 							</form>
 							<a href="*">
-								<img class="xizin" src="icon/xizin.png">
+								<img class="header__navbar__busca-bag__bag__modal__lista-produto__produto__btn-close" src="icon/xizin.png">
 							</a>
 						</div>
-						<div class="produto">
-							<img class="prod-img" src="img/prod4.png"/>
+						<div class="header__navbar__busca-bag__bag__modal__lista-produto__produto">
+							<img class="header__navbar__busca-bag__bag__modal__lista-produto__produto__prod-img" src="img/prod4.png"/>
 							<p>Rasteira Tira Dedo<br/><span>R$ 49,90</span></p>
 							<form class="btn-lista-produto">
 								<input type="button" value="-" onclick="menos( 'quantidade4' )">
@@ -307,11 +296,11 @@
 								<input type="button" value="+" onclick="mais( 'quantidade4' )">
 							</form>
 							<a href="*">
-								<img class="xizin" src="icon/xizin.png">
+								<img class="header__navbar__busca-bag__bag__modal__lista-produto__produto__btn-close" src="icon/xizin.png">
 							</a>
 						</div>
-						<div class="produto">
-							<img class="prod-img" src="img/prod5.png"/>
+						<div class="header__navbar__busca-bag__bag__modal__lista-produto__produto">
+							<img class="header__navbar__busca-bag__bag__modal__lista-produto__produto__prod-img" src="img/prod5.png"/>
 							<p>Rasteira Tira Dedo<br/><span>R$ 49,90</span></p>
 							<form class="btn-lista-produto">
 								<input type="button" value="-" onclick="menos( 'quantidade5' )">
@@ -319,7 +308,7 @@
 								<input type="button" value="+" onclick="mais( 'quantidade5' )">
 							</form>
 							<a href="*">
-								<img class="xizin" src="icon/xizin.png">
+								<img class="header__navbar__busca-bag__bag__modal__lista-produto__produto__btn-close" src="icon/xizin.png">
 							</a>
 						</div>
 					</div>
@@ -339,175 +328,144 @@
 	<div class="breadcrumb">
 		<a href="#">Home</a><a href="*">Sapatos</a>
 	</div>
-	<section class="corpo-content1">
-		<div class="foto"><!-- Foto -->
-			<div class="foto__row">
-				<div class="foto__row__column">
-					<div class="foto__row__column__video">
-						<span>Vídeo</span>
-						<a href="*"><img src="icon/play.png"></a>
-					</div>
+	<section class="main">
+		<!-- Foto -->
+		<div class="main__foto">
+			<div class="main__foto__column">
+				<div class="main__foto__column__video">
+					<span>Vídeo</span>
+					<a href="#"><img src="icon/play.png"></a>
 				</div>
-				<div class="foto__row__column">
-					<a class="foto__row__column__cima" onclick="plusSlides(-1)"><img src="icon/cima.png"></a>
-				</div>
-				<div class="foto__row__column">
-					<img class="demo cursor" src="img/prod02-1-p.png" onclick="currentSlide(1)" alt="Sandalha 1">
-				</div>
-				<div class="foto__row__column">
-					<img class="demo cursor" src="img/prod02-2-p.png" onclick="currentSlide(2)" alt="Sandalha 2">
-				</div>
-				<div class="foto__row__column">
-					<img class="demo cursor" src="img/prod02-3-p.png" onclick="currentSlide(3)" alt="Sandalha 3">
-				</div>
-				<div class="foto__row__column">
-					<img class="demo cursor" src="img/prod02-4-p.png" onclick="currentSlide(4)" alt="Sandalha 4">
-				</div>
-				<div class="foto__row__column">
-					<a class="foto__row__column__baixo" onclick="plusSlides(1)"><img src="icon/baixo.png"></a>
-				</div>
+					<a class="main__foto__column--btn-esq" onclick="plusSlides(-1)"><img src="icon/esq.png"></a>
+					<a class="main__foto__column--btn-cima" onclick="plusSlides(-1)"><img src="icon/cima.png"></a>
+					<img class="main__foto__column__img-p" src="img/prod02-1-p.png" onclick="currentSlide(1)" alt="Sandalha 1">				
+					<img class="main__foto__column__img-p" src="img/prod02-2-p.png" onclick="currentSlide(2)" alt="Sandalha 2">				
+					<img class="main__foto__column__img-p" src="img/prod02-3-p.png" onclick="currentSlide(3)" alt="Sandalha 3">				
+					<img class="main__foto__column__img-p" src="img/prod02-4-p.png" onclick="currentSlide(4)" alt="Sandalha 4">
+					<a class="main__foto__column--btn-dir" onclick="plusSlides(1)"><img src="icon/dir.png"></a>
+					<a class="main__foto__column--btn-baixo" onclick="plusSlides(1)"><img src="icon/baixo.png"></a>
 			</div>
-			<div class="mySlides">
-				<a class="mySlides__slide" href="*">
-					<img src="img/prod02-1-g.png" />
-					<span class="mySlides__slide__legenda">Sandalha rasteira 01</span>
-				</a>
+			<div class="main__foto__slide">
+				<img src="img/prod02-1-g.png" />	
 			</div>
-
-			<div class="mySlides">
-				<a class="mySlides__slide" href="*">
-					<img src="img/prod02-2-g.png"/>
-					<span class="mySlides__slide__legenda">Sandalha rasteira 02</span>
-				</a>
+			<div class="main__foto__slide">
+				<img src="img/prod02-2-g.png"/>
 			</div>
-
-			<div class="mySlides">
-				<a class="mySlides__slide" href="*">
-					<img src="img/prod02-3-g.png"/>
-					<span class="mySlides__slide__legenda">Sandalha rasteira 03</span>
-				</a>
+			<div class="main__foto__slide">
+				<img src="img/prod02-3-g.png"/>
 			</div>
-
-			<div class="mySlides">
-				<a class="mySlides__slide" href="*">
-					<img src="img/prod02-4-g.png"/>
-					<span class="mySlides__slide__legenda">Sandalha rasteira 04</span>
-				</a>
+			<div class="main__foto__slide">
+				<img src="img/prod02-4-g.png"/>
 			</div>
 		</div>
-		<!-- Início -- Info-produto -->						
-		<div class="info-produto">
-			<div class="descproduto">
+		<!-- Info-produto -->						
+		<div class="main__info-produto">
+			<div class="main__info-produto__titulo">
 				<h2>RASTEIRA TIRA DEDO</h2>
 				<span>RT 0568</span><span>03.07.0653</span>
 			</div>
-			<div class="preco">
+			<div class="main__info-produto__preco">
 				<div>
-					<span class="preco__old">R$ 69,00</span><span class="preco__new">R$ 55,20</span>
+					<span class="main__info-produto__preco__old">R$ 69,00</span><span class="main__info-produto__preco__new">R$ 55,20</span>
 				</div>
 				<div>
-					<span class="preco__parcela">Ou 6x de R$ 9,20</span>
+					<span class="main__info-produto__preco__parcela">Ou 6x de R$ 9,20</span>
 				</div>
 			</div>
-			<div class="cores">
-				<div class="cores__nome">
+			<div class="main__info-produto__cores">
+				<div class="main__info-produto__cores__nome">
 					<span>Cor: (<span id="cor">Fucsia</span>)</span>
 				</div>	
-				<div class="cores__circulo">
-					<img id="cir_am1" class="cores__circulo__maior" src="icon/amarela.png"/>
-					<img class="cores__circulo__menor" src="icon/magenta.png" onclick="mudaCor('Magenta');mudaCorNome(1);someCirculo(1)";/>
-					<img id="cir_am2" class="cores__circulo__maior" src="icon/amarela.png"/>
-					<img class="cores__circulo__menor" src="icon/fucsia.png" onclick="mudaCor('Fucsia');mudaCorNome(2);someCirculo(2)";/>
-					<img id="cir_am3" class="cores__circulo__maior" src="icon/amarela.png"/>
-					<img class="cores__circulo__menor" src="icon/marrom.png" onclick="mudaCor('Marrom');mudaCorNome(3);someCirculo(3)";/>
-					<img id="cir_am4" class="cores__circulo__maior" src="icon/amarela.png"/>
-					<img class="cores__circulo__menor" src="icon/preto.png" onclick="mudaCor('Preto');mudaCorNome(4);someCirculo(4)";/>
+				<div class="main__info-produto__cores__circulo">
+					<img id="cir_am1" class="main__info-produto__cores--circulo-g" src="icon/amarela.png"/>
+					<img class="main__info-produto__cores--circulo-p" src="icon/magenta.png" onclick="mudaCor('Magenta');mudaCorNome(1);someCirculo(1)";/>
+					<img id="cir_am2" class="main__info-produto__cores--circulo-g" src="icon/amarela.png"/>
+					<img class="main__info-produto__cores--circulo-p" src="icon/fucsia.png" onclick="mudaCor('Fucsia');mudaCorNome(2);someCirculo(2)";/>
+					<img id="cir_am3" class="main__info-produto__cores--circulo-g" src="icon/amarela.png"/>
+					<img class="main__info-produto__cores--circulo-p" src="icon/marrom.png" onclick="mudaCor('Marrom');mudaCorNome(3);someCirculo(3)";/>
+					<img id="cir_am4" class="main__info-produto__cores--circulo-g" src="icon/amarela.png"/>
+					<img class="main__info-produto__cores--circulo-p" src="icon/preto.png" onclick="mudaCor('Preto');mudaCorNome(4);someCirculo(4)";/>
 				</div>
 			</div>
-			<div class="tamanhos">
-				<div class="tamanhos__tamanho-guia">
-					<div>
-						<span>Tamanho: (<span id="num">37</span>)</span>
-					</div>
-					<div>
-						<a href="*">Guia de medidas</a>
-					</div>
+			<div class="main__info-produto__tamanhos">
+				<div class="main__info-produto__tamanhos__info">
+					<span>Tamanho: (<span id="num">37</span>)</span>
+					<a class="main__info-produto__tamanhos__info__guia" href="#">Guia de medidas</a>
 				</div>
-				<div class="content">
-					<figure class="content__bola" onclick="mudaFormat(1);mudaNum(33)";>
+				<div class="main__info-produto__tamanhos__bolas">
+					<figure class="main__info-produto__tamanhos__bolas__bola" onclick="mudaFormat(1);mudaNum(33)";>
 						<img id="img1" src="icon/ellipse.png"/>
 						<figcaption id="fig1">33</figcaption>
 					</figure>
-					<figure class="content__bola" onclick="mudaFormat(2);mudaNum(34)";>
+					<figure class="main__info-produto__tamanhos__bolas__bola" onclick="mudaFormat(2);mudaNum(34)";>
 						<img id="img2" src="icon/ellipse.png"/>
 						<figcaption id="fig2">34</figcaption>
 					</figure>
-					<figure class="content__bola" onclick="mudaFormat(3);mudaNum(35)";>
+					<figure class="main__info-produto__tamanhos__bolas__bola" onclick="mudaFormat(3);mudaNum(35)";>
 						<img id="img3" src="icon/ellipse.png"/>
 						<figcaption id="fig3">35</figcaption>
 					</figure>
-					<figure class="content__bola" onclick="mudaFormat(4);mudaNum(36)";>
+					<figure class="main__info-produto__tamanhos__bolas__bola" onclick="mudaFormat(4);mudaNum(36)";>
 						<img id="img4" src="icon/ellipse.png"/>
 						<figcaption id="fig4">36</figcaption>
 					</figure>
-					<figure class="content__bola" onclick="mudaFormat(5);mudaNum(37)";>
+					<figure class="main__info-produto__tamanhos__bolas__bola" onclick="mudaFormat(5);mudaNum(37)";>
 						<img id="img5" src="icon/ellipse_selecao.png"/>
 						<figcaption id="fig5">37</figcaption>
 					</figure>
-					<figure class="content__bola" onclick="mudaFormat(6);mudaNum(38)";>
+					<figure class="main__info-produto__tamanhos__bolas__bola" onclick="mudaFormat(6);mudaNum(38)";>
 						<img id="img6" src="icon/ellipse.png"/>
 						<figcaption id="fig6">38</figcaption>
 					</figure>
-					<figure class="content__bola" onclick="mudaFormat(7);mudaNum(39)";>
+					<figure class="main__info-produto__tamanhos__bolas__bola" onclick="mudaFormat(7);mudaNum(39)";>
 						<img id="img7" src="icon/ellipse.png"/>
 						<figcaption id="fig7">39</figcaption>
 					</figure>
-					<figure class="content__bola" onclick="mudaFormat(8);mudaNum(40)";>
+					<figure class="main__info-produto__tamanhos__bolas__bola" onclick="mudaFormat(8);mudaNum(40)";>
 						<img id="img8" src="icon/ellipse.png"/>
 						<figcaption id="fig8">40</figcaption>
 					</figure>
-					<figure class="content__bola" onclick="mudaFormat(9);mudaNum(41)";>
+					<figure class="main__info-produto__tamanhos__bolas__bola" onclick="mudaFormat(9);mudaNum(41)";>
 						<img id="img9" src="icon/ellipse.png"/>
 						<figcaption id="fig9">41</figcaption>
 					</figure>
-					<figure class="content__bola" onclick="mudaFormat(10);mudaNum(42)";>
+					<figure class="main__info-produto__tamanhos__bolas__bola" onclick="mudaFormat(10);mudaNum(42)";>
 						<img id="img10" src="icon/ellipse.png"/>
 						<figcaption id="fig10">42</figcaption>
 					</figure>
 				</div>
 			</div>
-			<div class="tamanhos__botao">
-				<button id="myBotao" class="botao">Adicionar à sacola</button>
+			<div class="main__info-produto__btn">
+				<button id="btn1" class="main__info-produto__btn-add">Adicionar à sacola</button>
 			</div>
-			<div class="tamanhos__texto">
+			<div class="main__info-produto__texto">
 				<p>Rasteira em atanado soft com tira no dedo e fechamento de fivela. Possui sola sempre na cor do cabedal.</p>
 			</div>
 			<!-- Início -- Modal Info-produto -->
-			<div id="myModal" class="modal">
-				<div class="modal-content">
-					<img class="close" src="icon/fechar.png">
-					<img class="modal__content__img" src="img/prod02.png">
-					<div class="modal__content__h2">
+			<div id="modal1" class="main__info-produto__modal">
+				<div class="main__info-produto__modal__content">
+					<img class="main__info-produto__modal__content__close" src="icon/fechar.png">
+					<img class="main__info-produto__modal__content__img" src="img/prod02.png">
+					<div class="main__info-produto__modal__content__titulo">
 						<h2>Adicionado<br/>com<br/>sucesso!</h2>
 					</div>
 					<button>Finalizar compra</button>
-					<div class="modal__content__link">
-						<a href="*">Continuar Comprando</a>
+					<div class="main__info-produto__modal__content__link">
+						<a href="#">Continuar Comprando</a>
 					</div>
 				</div>
 			</div>
 			<!-- Fim -- Modal Info-produto -->
 		</div>
-		<!-- Fim -- Info-produto -->
 	</section>
-	<section class="corpo-content2">
-		<div class="pratileira">
-			<div class="pratileira-titulo">
+	<section class="main">
+		<div class="main__pratileira">
+			<div class="main__pratileira__titulo">
 				<h2>Quem viu viu também</h2>
 			</div>
-	        <div class="mySlides2 fade">
-	          <div class="shelf">
-	                  <div class="shelf-iten">
+	        <div class="main__pratileira__content fade">
+	          <div class="main__pratileira__content--grupo">
+	                  <div class="main__pratileira__content--grupo__item">
 	                      <img src="icon/add.png">
 	                      <img src="img/prat01.png">
 	                      <p>R$ 204,90</p>
@@ -524,7 +482,7 @@
 	                          <ellipse cx="6.69557" cy="7.28113" rx="6.52174" ry="6.5105" fill="#000000"/>
 	                      </svg>
 	                  </div> 
-	                  <div class="shelf-iten">
+	                  <div class="main__pratileira__content--grupo__item">
 	                      <img src="icon/add.png">
 	                      <img src="img/prat02.png">
 	                      <p>R$ 204,90</p>
@@ -541,7 +499,7 @@
 	                          <ellipse cx="6.69557" cy="7.28113" rx="6.52174" ry="6.5105" fill="#000000"/>
 	                      </svg>
 	                  </div>
-	                  <div class="shelf-iten">
+	                  <div class="main__pratileira__content--grupo__item">
 	                      <img src="icon/add.png">
 	                      <img src="img/prat03.png">
 	                      <p>R$ 204,90</p>
@@ -558,7 +516,7 @@
 	                          <ellipse cx="6.69557" cy="7.28113" rx="6.52174" ry="6.5105" fill="#000000"/>
 	                      </svg>
 	                  </div>
-	                  <div class="shelf-iten">
+	                  <div class="main__pratileira__content--grupo__item">
 	                      <img src="icon/add.png">
 	                      <img src="img/prat04.png">
 	                      <p>R$ 204,90</p>
@@ -576,15 +534,15 @@
 	                      </svg>
 	                  </div>
 	          </div>
-	          <div class="shelf-controls">
-	              <a class="prev" onclick="maisSlides(-1)"><img src="icon/seta_e.png"/></a>
-	              <div class="numbertext">1 de 10</div>          
-	              <a class="next" onclick="maisSlides(1)"><img src="icon/seta_d.png"/></a>
+	          <div class="main__pratileira__content__controls">
+	              <a class="main__pratileira__content__controls--prev" onclick="maisSlides(-1)"><img src="icon/seta_e.png"/></a>
+	              <div class="main__pratileira__content__controls__numero">1 de 10</div>          
+	              <a class="main__pratileira__content__controls--next" onclick="maisSlides(1)"><img src="icon/seta_d.png"/></a>
 	          </div>
 	        </div>
-	        <div class="mySlides2 fade">
-	          <div class="shelf">
-	                  <div class="shelf-iten">
+	        <div class="main__pratileira__content fade">
+	          <div class="main__pratileira__content--grupo">
+	                  <div class="main__pratileira__content--grupo__item">
 	                      <img src="icon/add.png">
 	                      <img src="img/prat02.png">
 	                      <p>R$ 204,90</p>
@@ -601,7 +559,7 @@
 	                          <ellipse cx="6.69557" cy="7.28113" rx="6.52174" ry="6.5105" fill="#000000"/>
 	                      </svg>
 	                  </div> 
-	                  <div class="shelf-iten">
+	                  <div class="main__pratileira__content--grupo__item">
 	                      <img src="icon/add.png">
 	                      <img src="img/prat03.png">
 	                      <p>R$ 204,90</p>
@@ -618,7 +576,7 @@
 	                          <ellipse cx="6.69557" cy="7.28113" rx="6.52174" ry="6.5105" fill="#000000"/>
 	                      </svg>
 	                  </div>
-	                  <div class="shelf-iten">
+	                  <div class="main__pratileira__content--grupo__item">
 	                      <img src="icon/add.png">
 	                      <img src="img/prat04.png">
 	                      <p>R$ 204,90</p>
@@ -635,7 +593,7 @@
 	                          <ellipse cx="6.69557" cy="7.28113" rx="6.52174" ry="6.5105" fill="#000000"/>
 	                      </svg>
 	                  </div>
-	                  <div class="shelf-iten">
+	                  <div class="main__pratileira__content--grupo__item">
 	                      <img src="icon/add.png">
 	                      <img src="img/prat01.png">
 	                      <p>R$ 204,90</p>
@@ -653,15 +611,15 @@
 	                      </svg>
 	                  </div>
 	          </div>
-	          <div class="shelf-controls">
-	              <a class="prev" onclick="maisSlides(-1)"><img src="icon/seta_e.png"/></a>
-	              <div class="numbertext">2 de 10</div>          
-	              <a class="next" onclick="maisSlides(1)"><img src="icon/seta_d.png"/></a>
+	          <div class="main__pratileira__content__controls">
+	              <a class="main__pratileira__content__controls--prev" onclick="maisSlides(-1)"><img src="icon/seta_e.png"/></a>
+	              <div class="main__pratileira__content__controls__numero">2 de 10</div>          
+	              <a class="main__pratileira__content__controls--next" onclick="maisSlides(1)"><img src="icon/seta_d.png"/></a>
 	          </div>
 	        </div>
-	        <div class="mySlides2 fade">
-	          <div class="shelf">
-	                  <div class="shelf-iten">
+	        <div class="main__pratileira__content fade">
+	          <div class="main__pratileira__content--grupo">
+	                  <div class="main__pratileira__content--grupo__item">
 	                      <img src="icon/add.png">
 	                      <img src="img/prat03.png">
 	                      <p>R$ 204,90</p>
@@ -678,7 +636,7 @@
 	                          <ellipse cx="6.69557" cy="7.28113" rx="6.52174" ry="6.5105" fill="#000000"/>
 	                      </svg>
 	                  </div> 
-	                  <div class="shelf-iten">
+	                  <div class="main__pratileira__content--grupo__item">
 	                      <img src="icon/add.png">
 	                      <img src="img/prat04.png">
 	                      <p>R$ 204,90</p>
@@ -695,7 +653,7 @@
 	                          <ellipse cx="6.69557" cy="7.28113" rx="6.52174" ry="6.5105" fill="#000000"/>
 	                      </svg>
 	                  </div>
-	                  <div class="shelf-iten">
+	                  <div class="main__pratileira__content--grupo__item">
 	                      <img src="icon/add.png">
 	                      <img src="img/prat01.png">
 	                      <p>R$ 204,90</p>
@@ -712,7 +670,7 @@
 	                          <ellipse cx="6.69557" cy="7.28113" rx="6.52174" ry="6.5105" fill="#000000"/>
 	                      </svg>
 	                  </div>
-	                  <div class="shelf-iten">
+	                  <div class="main__pratileira__content--grupo__item">
 	                      <img src="icon/add.png">
 	                      <img src="img/prat02.png">
 	                      <p>R$ 204,90</p>
@@ -730,15 +688,15 @@
 	                      </svg>
 	                  </div>
 	          </div>
-	          <div class="shelf-controls">
-	              <a class="prev" onclick="maisSlides(-1)"><img src="icon/seta_e.png"/></a>
-	              <div class="numbertext">3 de 10</div>          
-	              <a class="next" onclick="maisSlides(1)"><img src="icon/seta_d.png"/></a>
+	          <div class="main__pratileira__content__controls">
+	              <a class="main__pratileira__content__controls--prev" onclick="maisSlides(-1)"><img src="icon/seta_e.png"/></a>
+	              <div class="main__pratileira__content__controls__numero">3 de 10</div>          
+	              <a class="main__pratileira__content__controls--next" onclick="maisSlides(1)"><img src="icon/seta_d.png"/></a>
 	          </div>
 	        </div>
-	        <div class="mySlides2 fade">
-	          <div class="shelf">
-	                  <div class="shelf-iten">
+	        <div class="main__pratileira__content fade">
+	          <div class="main__pratileira__content--grupo">
+	                  <div class="main__pratileira__content--grupo__item">
 	                      <img src="icon/add.png">
 	                      <img src="img/prat04.png">
 	                      <p>R$ 204,90</p>
@@ -755,7 +713,7 @@
 	                          <ellipse cx="6.69557" cy="7.28113" rx="6.52174" ry="6.5105" fill="#000000"/>
 	                      </svg>
 	                  </div> 
-	                  <div class="shelf-iten">
+	                  <div class="main__pratileira__content--grupo__item">
 	                      <img src="icon/add.png">
 	                      <img src="img/prat03.png">
 	                      <p>R$ 204,90</p>
@@ -772,7 +730,7 @@
 	                          <ellipse cx="6.69557" cy="7.28113" rx="6.52174" ry="6.5105" fill="#000000"/>
 	                      </svg>
 	                  </div>
-	                  <div class="shelf-iten">
+	                  <div class="main__pratileira__content--grupo__item">
 	                      <img src="icon/add.png">
 	                      <img src="img/prat02.png">
 	                      <p>R$ 204,90</p>
@@ -789,7 +747,7 @@
 	                          <ellipse cx="6.69557" cy="7.28113" rx="6.52174" ry="6.5105" fill="#000000"/>
 	                      </svg>
 	                  </div>
-	                  <div class="shelf-iten">
+	                  <div class="main__pratileira__content--grupo__item">
 	                      <img src="icon/add.png">
 	                      <img src="img/prat01.png">
 	                      <p>R$ 204,90</p>
@@ -807,10 +765,10 @@
 	                      </svg>
 	                  </div>
 	          </div>
-	          <div class="shelf-controls">
-	              <a class="prev" onclick="maisSlides(-1)"><img src="icon/seta_e.png"/></a>
-	              <div class="numbertext">4 de 10</div>          
-	              <a class="next" onclick="maisSlides(1)"><img src="icon/seta_d.png"/></a>
+	          <div class="main__pratileira__content__controls">
+	              <a class="main__pratileira__content__controls--prev" onclick="maisSlides(-1)"><img src="icon/seta_e.png"/></a>
+	              <div class="main__pratileira__content__controls__numero">4 de 10</div>          
+	              <a class="main__pratileira__content__controls--next" onclick="maisSlides(1)"><img src="icon/seta_d.png"/></a>
 	          </div>
 	        </div>
     	</div>
@@ -818,10 +776,10 @@
 	<footer id="footer">
 		<div class="footer__parte-cima">
 			<div class="footer__parte-cima__icons"/>
-				<img src="icon/facebook.png"/>
-				<img src="icon/insta.png"/>
-				<img src="icon/subtract.png"/>
-				<img src="icon/vtex-pci-200.png"/>
+				<a href="https://www.facebook.com/ViaMiaOficial/"><img src="icon/facebook.png"/></a>
+				<a href="https://www.instagram.com/viamia/"><img src="icon/insta.png"/></a>
+				<a href="https://br.pinterest.com/viamia/"><img src="icon/subtract.png"/></a>
+				<a href="https://www.vtex.com/pt-br"><img src="icon/vtex-pci-200.png"/></a>
 				<img src="icon/selo-ebit.png"/>
 			</div>
 			<div class="footer__parte-cima__links">
@@ -868,11 +826,11 @@
 					<circle cx="147.166" cy="146.5" r="145.5" fill="white" stroke="#AEB6C1" stroke-width="2"/>
 				</svg>
 				<h2>Assine nossa news</h2>
-				<form action="/action_page.php">
-					<label class="ass-new__lnome">Nome</label>
-					<input class="ass-new__Inome" type="text" name="nome" placeholder="Nome" value="Renata">
-					<input class="ass-new__Iemail" type="text" name="email" placeholder="E-mail">
-					<input class="ass-new__Ienviar" type="submit" value="Enviar">
+				<form>
+					<label class="footer__parte-cima__ass-new__lnome">Nome</label>
+					<input class="footer__parte-cima__ass-new__Inome" type="text" name="nome" placeholder="Nome" value="Renata">
+					<input class="footer__parte-cima__ass-new__Iemail" type="text" name="email" placeholder="E-mail">
+					<input class="footer__parte-cima__ass-new__Ienviar" type="submit" value="Enviar">
 				</form>
 			</div>
 		</div>
